@@ -35,6 +35,7 @@ in
         example-interfaces
         sensor-msgs-py
         demo-nodes-cpp
+        (lib.getLib rosPkgs.qt5.qtbase)
         (lib.getDev rosPkgs.qt5.qtbase)
       ];
   };
