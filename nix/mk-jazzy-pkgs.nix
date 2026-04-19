@@ -35,13 +35,14 @@ in
         (lib.getDev rcutils)
         rosidl-runtime-c
         (lib.getDev rosidl-runtime-c)
-        # tutorial related; TODO: delete it
-        turtlesim
         rqt
         rqt-common-plugins
         rqt-service-caller
         rqt-graph
         rqt-topic
+        # specific to this tutorial
+        examples-rclcpp-minimal-subscriber
+        examples-rclcpp-minimal-publisher
       ];
     };
 }

@@ -37,8 +37,13 @@
           packages = [
             jazzy-pkgs.rosEnv
             pkgs.colcon
+            pkgs.python3Packages.colcon-mixin
+            jazzy-pkgs.rosPkgs.python3Packages.rosdep
           ];
           shellHook = ''
+            if [ -f install/setup.sh ]; then
+              source install/setup.sh
+            fi
             exec ${pkgs.zsh}/bin/zsh
           '';
         };
