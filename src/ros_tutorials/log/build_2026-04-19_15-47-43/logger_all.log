@@ -1,0 +1,19 @@
+[-1776638861903379712.000s] DEBUG:colcon:Command line arguments: ['/nix/store/6qmpniyby1mx2sc5rkfjynxl81qzgjjk-python3.13-colcon-core-0.20.1/bin/colcon', 'build']
+[-1776638861903379712.000s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='sequential', event_handlers=None, paths=['.'], verb_parser=CustomArgumentParser(prog='colcon build', usage=None, description='Build a set of packages.', formatter_class=<class 'colcon_core.command.CustomFormatter'>, conflict_handler='error', add_help=True), verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ffff5f038c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ffff5f038c0>>)
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_discovery:PathPackageDiscovery.discover(['.'])
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore']
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python']
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[-1776638861903379712.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[-1776638861903379712.000s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[-1776638861903379712.000s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[-1776638861903379712.000s] DEBUG:colcon.colcon_core.executor.sequential:loop closed
+[-1776638861903379712.000s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[-1776638861903379712.000s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[-1776638861903379712.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-1776638861903379712.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/felix/doodle/ros2libtutorial/src/ros_tutorials/install/local_setup.sh'
+[-1776638861903379712.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/felix/doodle/ros2libtutorial/src/ros_tutorials/install/_local_setup_util_sh.py'
+[-1776638861903379712.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/felix/doodle/ros2libtutorial/src/ros_tutorials/install/setup.sh'

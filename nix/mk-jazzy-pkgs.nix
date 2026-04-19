@@ -24,25 +24,18 @@ in
 {
   inherit (jazzy) rosPkgs ros;
 
-  rosEnv =
-    with jazzy.ros;
-    buildEnv {
-      paths = [
+  rosEnv = jazzy.ros.buildEnv {
+    paths =
+      with jazzy.ros;
+      [
+        ament-cmake-core
+        python-cmake-module
         ros-core
-        rcl
-        (lib.getDev rcl)
-        rcutils
-        (lib.getDev rcutils)
-        rosidl-runtime-c
-        (lib.getDev rosidl-runtime-c)
-        rqt
-        rqt-common-plugins
-        rqt-service-caller
-        rqt-graph
-        rqt-topic
-        # specific to this tutorial
-        examples-rclcpp-minimal-subscriber
-        examples-rclcpp-minimal-publisher
+        common-interfaces
+        example-interfaces
+        sensor-msgs-py
+        demo-nodes-cpp
+        (lib.getDev rosPkgs.qt5.qtbase)
       ];
-    };
+  };
 }
