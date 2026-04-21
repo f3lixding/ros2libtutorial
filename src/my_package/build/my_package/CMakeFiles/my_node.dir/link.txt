@@ -1,0 +1,1 @@
+/nix/store/hb2bs5fg5wkm04x565737qd5nh2hy5nk-gcc-wrapper-15.2.0/bin/g++ -Wl,--dependency-file=CMakeFiles/my_node.dir/link.d CMakeFiles/my_node.dir/src/my_node.cpp.o -o my_node

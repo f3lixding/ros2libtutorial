@@ -1,0 +1,174 @@
+Invoking command in '/home/felix/doodle/ros2libtutorial/src/my_package/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/doodle/ros2libtutorial/install/launch_testing_examples:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_pointcloud_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_subscriber:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_service:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_server:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_guard_conditions:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_executors:/nix/store/4pk1p74r2wd4qaci788dmgmzknkswzyf-ros-env _=/nix/store/74sind1d6vf2bfwd7yklg8chsvzqxmmq-coreutils-9.10/bin/env buildPhase={ echo "------------------------------------------------------------";
+  echo " WARNING: the existence of this path is not guaranteed.";
+  echo " It is an internal implementation detail for pkgs.mkShell.";
+  echo "------------------------------------------------------------";
+  echo;
+  # Record all build inputs as runtime dependencies
+  export;
+} >> "$out" shellHook=if [ -f install/setup.sh ]; then
+  source install/setup.sh
+fi
+
+for qt_plugins in \
+  /nix/store/i282hl3017jbvqzp38mhl3vzyhkkc8xs-qtbase-5.15.17-bin/lib/qt-*/plugins \
+  /nix/store/fcxay86p8rzpky81h2i1f9yg8hp2clkj-qtwayland-5.15.17-bin/lib/qt-*/plugins
+do
+  if [ -d "$qt_plugins" ]; then
+    export QT_PLUGIN_PATH="$qt_plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+  fi
+done
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DISPLAY="${DISPLAY:-:0}"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:-wayland}"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-xcb}"
+
+if [ -t 1 ]; then
+  exec /nix/store/y4b3b0s45lh95v9hnzl1b2na4n8i30zk-zsh-5.9/bin/zsh
+fi /nix/store/n3i9hx4y2y9hmv9rdrlibaqh7075drv4-python3.13-cmake-3.31.7/bin/cmake /home/felix/doodle/ros2libtutorial/src/my_package -DCMAKE_INSTALL_PREFIX=/home/felix/doodle/ros2libtutorial/src/my_package/install/my_package
+Invoked command in '/home/felix/doodle/ros2libtutorial/src/my_package/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/doodle/ros2libtutorial/install/launch_testing_examples:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_pointcloud_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_subscriber:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_service:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_server:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_guard_conditions:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_executors:/nix/store/4pk1p74r2wd4qaci788dmgmzknkswzyf-ros-env _=/nix/store/74sind1d6vf2bfwd7yklg8chsvzqxmmq-coreutils-9.10/bin/env buildPhase={ echo "------------------------------------------------------------";
+  echo " WARNING: the existence of this path is not guaranteed.";
+  echo " It is an internal implementation detail for pkgs.mkShell.";
+  echo "------------------------------------------------------------";
+  echo;
+  # Record all build inputs as runtime dependencies
+  export;
+} >> "$out" shellHook=if [ -f install/setup.sh ]; then
+  source install/setup.sh
+fi
+
+for qt_plugins in \
+  /nix/store/i282hl3017jbvqzp38mhl3vzyhkkc8xs-qtbase-5.15.17-bin/lib/qt-*/plugins \
+  /nix/store/fcxay86p8rzpky81h2i1f9yg8hp2clkj-qtwayland-5.15.17-bin/lib/qt-*/plugins
+do
+  if [ -d "$qt_plugins" ]; then
+    export QT_PLUGIN_PATH="$qt_plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+  fi
+done
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DISPLAY="${DISPLAY:-:0}"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:-wayland}"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-xcb}"
+
+if [ -t 1 ]; then
+  exec /nix/store/y4b3b0s45lh95v9hnzl1b2na4n8i30zk-zsh-5.9/bin/zsh
+fi /nix/store/n3i9hx4y2y9hmv9rdrlibaqh7075drv4-python3.13-cmake-3.31.7/bin/cmake /home/felix/doodle/ros2libtutorial/src/my_package -DCMAKE_INSTALL_PREFIX=/home/felix/doodle/ros2libtutorial/src/my_package/install/my_package
+Invoking command in '/home/felix/doodle/ros2libtutorial/src/my_package/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/doodle/ros2libtutorial/install/launch_testing_examples:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_pointcloud_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_subscriber:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_service:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_server:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_guard_conditions:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_executors:/nix/store/4pk1p74r2wd4qaci788dmgmzknkswzyf-ros-env _=/nix/store/74sind1d6vf2bfwd7yklg8chsvzqxmmq-coreutils-9.10/bin/env buildPhase={ echo "------------------------------------------------------------";
+  echo " WARNING: the existence of this path is not guaranteed.";
+  echo " It is an internal implementation detail for pkgs.mkShell.";
+  echo "------------------------------------------------------------";
+  echo;
+  # Record all build inputs as runtime dependencies
+  export;
+} >> "$out" shellHook=if [ -f install/setup.sh ]; then
+  source install/setup.sh
+fi
+
+for qt_plugins in \
+  /nix/store/i282hl3017jbvqzp38mhl3vzyhkkc8xs-qtbase-5.15.17-bin/lib/qt-*/plugins \
+  /nix/store/fcxay86p8rzpky81h2i1f9yg8hp2clkj-qtwayland-5.15.17-bin/lib/qt-*/plugins
+do
+  if [ -d "$qt_plugins" ]; then
+    export QT_PLUGIN_PATH="$qt_plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+  fi
+done
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DISPLAY="${DISPLAY:-:0}"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:-wayland}"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-xcb}"
+
+if [ -t 1 ]; then
+  exec /nix/store/y4b3b0s45lh95v9hnzl1b2na4n8i30zk-zsh-5.9/bin/zsh
+fi /nix/store/n3i9hx4y2y9hmv9rdrlibaqh7075drv4-python3.13-cmake-3.31.7/bin/cmake --build /home/felix/doodle/ros2libtutorial/src/my_package/build/my_package -- -j32 -l32
+Invoked command in '/home/felix/doodle/ros2libtutorial/src/my_package/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/doodle/ros2libtutorial/install/launch_testing_examples:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_pointcloud_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_subscriber:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_service:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_server:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_guard_conditions:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_executors:/nix/store/4pk1p74r2wd4qaci788dmgmzknkswzyf-ros-env _=/nix/store/74sind1d6vf2bfwd7yklg8chsvzqxmmq-coreutils-9.10/bin/env buildPhase={ echo "------------------------------------------------------------";
+  echo " WARNING: the existence of this path is not guaranteed.";
+  echo " It is an internal implementation detail for pkgs.mkShell.";
+  echo "------------------------------------------------------------";
+  echo;
+  # Record all build inputs as runtime dependencies
+  export;
+} >> "$out" shellHook=if [ -f install/setup.sh ]; then
+  source install/setup.sh
+fi
+
+for qt_plugins in \
+  /nix/store/i282hl3017jbvqzp38mhl3vzyhkkc8xs-qtbase-5.15.17-bin/lib/qt-*/plugins \
+  /nix/store/fcxay86p8rzpky81h2i1f9yg8hp2clkj-qtwayland-5.15.17-bin/lib/qt-*/plugins
+do
+  if [ -d "$qt_plugins" ]; then
+    export QT_PLUGIN_PATH="$qt_plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+  fi
+done
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DISPLAY="${DISPLAY:-:0}"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:-wayland}"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-xcb}"
+
+if [ -t 1 ]; then
+  exec /nix/store/y4b3b0s45lh95v9hnzl1b2na4n8i30zk-zsh-5.9/bin/zsh
+fi /nix/store/n3i9hx4y2y9hmv9rdrlibaqh7075drv4-python3.13-cmake-3.31.7/bin/cmake --build /home/felix/doodle/ros2libtutorial/src/my_package/build/my_package -- -j32 -l32
+Invoking command in '/home/felix/doodle/ros2libtutorial/src/my_package/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/doodle/ros2libtutorial/install/launch_testing_examples:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_pointcloud_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_subscriber:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_service:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_server:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_guard_conditions:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_executors:/nix/store/4pk1p74r2wd4qaci788dmgmzknkswzyf-ros-env _=/nix/store/74sind1d6vf2bfwd7yklg8chsvzqxmmq-coreutils-9.10/bin/env buildPhase={ echo "------------------------------------------------------------";
+  echo " WARNING: the existence of this path is not guaranteed.";
+  echo " It is an internal implementation detail for pkgs.mkShell.";
+  echo "------------------------------------------------------------";
+  echo;
+  # Record all build inputs as runtime dependencies
+  export;
+} >> "$out" shellHook=if [ -f install/setup.sh ]; then
+  source install/setup.sh
+fi
+
+for qt_plugins in \
+  /nix/store/i282hl3017jbvqzp38mhl3vzyhkkc8xs-qtbase-5.15.17-bin/lib/qt-*/plugins \
+  /nix/store/fcxay86p8rzpky81h2i1f9yg8hp2clkj-qtwayland-5.15.17-bin/lib/qt-*/plugins
+do
+  if [ -d "$qt_plugins" ]; then
+    export QT_PLUGIN_PATH="$qt_plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+  fi
+done
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DISPLAY="${DISPLAY:-:0}"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:-wayland}"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-xcb}"
+
+if [ -t 1 ]; then
+  exec /nix/store/y4b3b0s45lh95v9hnzl1b2na4n8i30zk-zsh-5.9/bin/zsh
+fi /nix/store/n3i9hx4y2y9hmv9rdrlibaqh7075drv4-python3.13-cmake-3.31.7/bin/cmake --install /home/felix/doodle/ros2libtutorial/src/my_package/build/my_package
+Invoked command in '/home/felix/doodle/ros2libtutorial/src/my_package/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/doodle/ros2libtutorial/install/launch_testing_examples:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_pointcloud_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_subscriber:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_service:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_publisher:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_server:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_minimal_action_client:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_guard_conditions:/home/felix/doodle/ros2libtutorial/install/examples_rclpy_executors:/nix/store/4pk1p74r2wd4qaci788dmgmzknkswzyf-ros-env _=/nix/store/74sind1d6vf2bfwd7yklg8chsvzqxmmq-coreutils-9.10/bin/env buildPhase={ echo "------------------------------------------------------------";
+  echo " WARNING: the existence of this path is not guaranteed.";
+  echo " It is an internal implementation detail for pkgs.mkShell.";
+  echo "------------------------------------------------------------";
+  echo;
+  # Record all build inputs as runtime dependencies
+  export;
+} >> "$out" shellHook=if [ -f install/setup.sh ]; then
+  source install/setup.sh
+fi
+
+for qt_plugins in \
+  /nix/store/i282hl3017jbvqzp38mhl3vzyhkkc8xs-qtbase-5.15.17-bin/lib/qt-*/plugins \
+  /nix/store/fcxay86p8rzpky81h2i1f9yg8hp2clkj-qtwayland-5.15.17-bin/lib/qt-*/plugins
+do
+  if [ -d "$qt_plugins" ]; then
+    export QT_PLUGIN_PATH="$qt_plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+  fi
+done
+
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DISPLAY="${DISPLAY:-:0}"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:-wayland}"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-xcb}"
+
+if [ -t 1 ]; then
+  exec /nix/store/y4b3b0s45lh95v9hnzl1b2na4n8i30zk-zsh-5.9/bin/zsh
+fi /nix/store/n3i9hx4y2y9hmv9rdrlibaqh7075drv4-python3.13-cmake-3.31.7/bin/cmake --install /home/felix/doodle/ros2libtutorial/src/my_package/build/my_package
