@@ -30,15 +30,46 @@
           inherit system nix-ros-overlay;
           pkgs = ros-pkgs;
         };
+        py = jazzy-pkgs.ros.python3Packages;
+        patchedCatkinPkg = py."catkin-pkg".overrideAttrs (old: {
+          propagatedBuildInputs = builtins.map (
+            pkg: if (pkg.pname or pkg.name or "") == "setuptools" then py.setuptools_79 else pkg
+          ) old.propagatedBuildInputs;
+        });
+        patchedColconRos = py."colcon-ros".overrideAttrs (old: {
+          propagatedBuildInputs = builtins.map (
+            pkg: if (pkg.pname or pkg.name or "") == "catkin-pkg" then patchedCatkinPkg else pkg
+          ) old.propagatedBuildInputs;
+        });
+        colcon = pkgs.buildEnv {
+          name = "colcon-jazzy";
+          paths = [
+            py.colcon
+            py."colcon-bash"
+            py."colcon-cmake"
+            py."colcon-defaults"
+            py."colcon-library-path"
+            py."colcon-metadata"
+            py."colcon-mixin"
+            py."colcon-notification"
+            py."colcon-output"
+            py."colcon-package-information"
+            py."colcon-package-selection"
+            py."colcon-parallel-executor"
+            py."colcon-python-setup-py"
+            py."colcon-recursive-crawl"
+            patchedColconRos
+            py."colcon-test-result"
+            py."colcon-zsh"
+          ];
+        };
       in
       {
         packages.default = jazzy-pkgs.rosEnv;
         devShells.default = pkgs.mkShell {
           packages = [
             jazzy-pkgs.rosEnv
-            pkgs.colcon
-            pkgs.python3Packages.colcon-mixin
-            pkgs.python3Packages.colcon-recursive-crawl
+            colcon
             jazzy-pkgs.rosPkgs.python3Packages.rosdep
           ];
           shellHook = ''
